@@ -3,71 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="William Odima — Malware Analysis, Incident Response, Web Development, Content Writing. Portfolio and contact information." />
   <title>William Odima Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="profile-pic-container">
-      <img src="https://i.imgur.com/iNVvJRK.jpg" alt="William Odima Profile Picture" class="profile-pic"/>
+      <!-- Replace assets/profile.jpg with your uploaded photo; fallback to placeholder if not present -->
+      <img src="assets/profile.jpg" alt="William Odima Profile Picture" class="profile-pic" onerror="this.onerror=null;this.src='https://via.placeholder.com/140?text=William'" />
     </div>
     <h1>Hi, I'm William Odima</h1>
-    <p>
-      I'm from Kenya. I studied Computer Science with a focus on Web Development and Malware Analysis, 
-      and I'm open to any kind of job to build a better future.
+    <p class="tagline">
+      Malware Analyst & Incident Responder who builds secure web experiences and writes technical content. I manage This AI Agency, helping SaaS companies and startups scale growth using AI-driven strategies.
     </p>
+    <div class="social-links">
+      <a href="https://github.com/Wil666-pro" target="_blank" rel="noopener" class="project-btn">GitHub</a>
+      <a href="https://www.linkedin.com/in/william-o-b5363a97?trk=contact-info" target="_blank" rel="noopener" class="project-btn">LinkedIn</a>
+      <a href="README.md" class="project-btn">Download CV</a>
+      <a href="https://www.thisaiagency.com" target="_blank" rel="noopener" class="project-btn">This AI Agency</a>
+    </div>
   </header>
 
-  <section class="education">
-    <h2>🎓 Education</h2>
-    <ul>
-      <li><strong>University of The People</strong>, 2022</li>
-    </ul>
-  </section>
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I studied Computer Science with a focus on Malware Analysis. I investigate threats, perform incident response, and build secure, user-friendly web tools. I also write technical content and lead This AI Agency (www.thisaiagency.com) — we help SaaS companies and startups scale with AI-driven growth strategies. I'm a fast learner, clear communicator, and enjoy working with teams to deliver reliable solutions.
+      </p>
+    </section>
 
-  <section class="skills">
-    <h2>💼 Skills</h2>
-    <ul>
-      <li>🌐 Web Development (HTML, CSS, JavaScript)</li>
-      <li>🔍 Malware Analysis Basics To Advanced</li>
-      <li> Incident Response Technician</li>
+    <section class="education">
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><strong>University of the People</strong> — Computer Science, 2022</li>
+      </ul>
+    </section>
 
-</li>Blue Team Assistant (IR Support)</li>
+    <section class="skills">
+      <h2>💼 Skills</h2>
+      <ul>
+        <li>Malware Analysis: static &amp; dynamic analysis, IOC creation, threat hunting</li>
+        <li>Incident Response: triage, containment, remediation, logging &amp; monitoring</li>
+        <li>Web Development: HTML, CSS, JavaScript, responsive design</li>
+        <li>Automation / Scripting: PowerShell (security automation), Python</li>
+        <li>Programming: Python, C++</li>
+        <li>Content Writing: technical articles, documentation, marketing content</li>
+        <li>Business Growth: marketing analytics and AI-driven growth strategies for SaaS</li>
+      </ul>
+    </section>
 
-    </li>Security Automation Intern (PowerShell focus)</li>
-      <li>🖥️ Programming: Python, C++</li>
-      <li>💬 Good English Communication</li>
-      <li>Marketing Analytics skills</li>
-    </ul>
-  </section>
+    <section class="projects">
+      <h2>🚀 Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <h3>MINISIEM-GitHub</h3>
+          <p>Small SIEM-like project for logging and searching security events (example).</p>
+          <div class="button-group">
+            <a href="https://wil666-pro.github.io/MINISIEM-GitHub-/" target="_blank" rel="noopener" class="project-btn">View Project</a>
+            <a href="https://github.com/Wil666-pro/MINISIEM-GitHub-" target="_blank" rel="noopener" class="project-btn">Source</a>
+          </div>
+        </div>
 
-  <section class="projects">
-    <h2>🚀 Projects</h2>
-    <div class="button-group">
-      <a href="#" class="https://wil666-pro.github.io/MINISIEM-GitHub-/">Project 1</a>
-      <a href="#" class="project-btn">Project 2</a>
-    </div>
-  </section>
+        <div class="project-card">
+          <h3>This AI Agency</h3>
+          <p>Growth and AI-driven strategies for SaaS and startups. I manage operations and help clients scale their business.</p>
+          <div class="button-group">
+            <a href="https://www.thisaiagency.com" target="_blank" rel="noopener" class="project-btn">Visit</a>
+          </div>
+        </div>
 
-  <section class="contact">
-    <h2>📩 Contact Me</h2>
-    <p>Phone: 254732046128</p>
-    <p>Email: <a href="mailto:owillis455@gmail.com">owillis455@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/254787174850">Chat with me</a></p>
-  </section>
+        <div class="project-card">
+          <h3>Portfolio Site (this repo)</h3>
+          <p>Simple, responsive personal portfolio built with HTML/CSS and easy to customize.</p>
+          <div class="button-group">
+            <a href="https://wil666-pro.github.io/CV_1/" target="_blank" rel="noopener" class="project-btn">Live</a>
+            <a href="https://github.com/Wil666-pro/CV_1" target="_blank" rel="noopener" class="project-btn">Source</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section class="contact-form-section">
-    <h2>Send Me a Message</h2>
-    <form class="contact-form" action="mailto:owillis455@gmail.com" method="POST" enctype="text/plain">
-      <label for="contact-message">Your Message:</label>
-      <textarea id="contact-message" name="body" rows="5" placeholder="Type your message here..." required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <section class="experience">
+      <h2>🧰 Experience</h2>
+      <ul>
+        <li><strong>Manager — This AI Agency</strong> — Growth strategies, AI-driven product growth for SaaS and startups</li>
+        <li><strong>Security Automation Intern</strong> — PowerShell-focused automation (intern role)</li>
+        <li><strong>Blue Team Assistant</strong> — Incident response support and monitoring</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>📩 Contact Me</h2>
+      <p>Phone: <a href="tel:+254732046128">+254 732 046128</a></p>
+      <p>Email: <a href="mailto:owilly323@gmail.com">owilly323@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/254787174850" target="_blank" rel="noopener">Chat with me</a></p>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Send Me a Message</h2>
+      <!-- Simple JS-based mailto form for better UX -->
+      <form class="contact-form" id="contact-form">
+        <label for="contact-name">Your Name</label>
+        <input id="contact-name" name="name" type="text" placeholder="Your name" required />
+
+        <label for="contact-email">Your Email</label>
+        <input id="contact-email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="contact-message">Your Message</label>
+        <textarea id="contact-message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>🌟 Always open for learning and ready to adapt. Easily reachable.</p>
   </footer>
-</body>
-    </html>
 
+  <script>
+    // Open user's email client with a pre-populated message (updated contact email)
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = encodeURIComponent(document.getElementById('contact-name').value.trim());
+      const email = encodeURIComponent(document.getElementById('contact-email').value.trim());
+      const message = encodeURIComponent(document.getElementById('contact-message').value.trim());
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + 'Message:\n' + message);
+      window.location.href = `mailto:owilly323@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
