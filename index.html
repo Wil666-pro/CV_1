@@ -22,6 +22,8 @@
       <a href="https://www.linkedin.com/in/william-o-b5363a97?trk=contact-info" target="_blank" rel="noopener" class="project-btn">LinkedIn</a>
       <a href="README.md" class="project-btn">Download CV</a>
       <a href="https://www.thisaiagency.com" target="_blank" rel="noopener" class="project-btn">This AI Agency</a>
+      <!-- CTA button: scrolls to contact form -->
+      <a href="#contact-form" class="cta-btn">Hire me</a>
     </div>
   </header>
 
@@ -100,10 +102,10 @@
       <p>WhatsApp: <a href="https://wa.me/254787174850" target="_blank" rel="noopener">Chat with me</a></p>
     </section>
 
-    <section class="contact-form-section">
+    <section class="contact-form-section" id="contact-form">
       <h2>Send Me a Message</h2>
       <!-- Simple JS-based mailto form for better UX -->
-      <form class="contact-form" id="contact-form">
+      <form class="contact-form" id="contact-form-form">
         <label for="contact-name">Your Name</label>
         <input id="contact-name" name="name" type="text" placeholder="Your name" required />
 
@@ -122,8 +124,16 @@
   </footer>
 
   <script>
+    // Smooth scroll for CTA and contact form handling
+    document.querySelectorAll('a[href="#contact-form"]').forEach(function(el){
+      el.addEventListener('click', function(e){
+        e.preventDefault();
+        document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
     // Open user's email client with a pre-populated message (updated contact email)
-    document.getElementById('contact-form').addEventListener('submit', function (e) {
+    document.getElementById('contact-form-form').addEventListener('submit', function (e) {
       e.preventDefault();
       const name = encodeURIComponent(document.getElementById('contact-name').value.trim());
       const email = encodeURIComponent(document.getElementById('contact-email').value.trim());
